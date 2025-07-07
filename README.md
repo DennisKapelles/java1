@@ -1,59 +1,80 @@
-Η ΒΔ αφορά ένα σύστημα αξιολόγησης προσωπικού StaffEvaluation ενός ομίλου εταιρειών 
-στο οποίο συνδέονται τέσσερις κατηγορίες χρηστών: 
+# Staff Evaluation System – Database Project
 
-Διευθυντές (managers) της εταιρείας στην οποία γίνεται η αξιολόγηση προσωπικού. Οι 
-διευθυντές αποφασίζουν για τις θέσεις που θα προκηρυχθούν για προαγωγή. Αυτοί 
-επίσης ενημερώνουν τα αρχεία των εργαζομένων κάθε φορά που υπάρχει μια 
-αλλαγή (πχ επιπλέον πιστοποίηση, επιπλέον συστατική επιστολή κλπ).
+## 📌 Project Overview
 
-Αξιολογητές (evaluators) που συνεργάζονται με την εταιρεία για την αξιολόγηση 
-προσωπικού, ανακοινώνουν τις θέσεις που μπορούν να διεκδικήσουν οι εργαζόμενοι 
-και κάνουν τις αξιολογήσεις. 
+This project focuses on designing and implementing a **relational database** that supports a **staff evaluation system** for a group of companies. It is developed in Java using JDBC for interaction with the database and includes multiple graphical user interfaces (GUIs) for different user roles.
 
-Υπάλληλοι της εταιρείας (employees) που υποβάλλουν αίτημα για αξιολόγηση για θέσεις 
-στις οποίες μπορούν να προαχθούν ή να μετακινηθούν. 
+## 🧩 Objective
 
-Διαχειριστές του συστήματος (administrator) που υλοποιεί την αξιολόγηση προσωπικού. 
+- Familiarize students with database design, SQL (queries, triggers, stored procedures), and GUI implementation using Java.
+- Extend a given database schema to support evaluation logic, job applications, logging, and user roles.
+- Simulate real-world functionality with assumptions where necessary.
 
-Επιπλέον λειτουργικές απαιτήσεις. 
+---
 
-- Το σύστημα υποστηρίζει περισσότερες από μια εταιρείες του ομίλου.
-- Για τις εταιρείες το σύστημα διατηρεί τα εξής στοιχεία: ΑΦΜ (μοναδικό), τη ΔΟΥ, το 
-τηλέφωνο και την έδρα (οδός, αριθμός, πόλη και χώρα).  
-- Για τους χρήστες του συστήματος διατηρούμε πληροφορίες για το username 
-(μοναδικό για κάθε χρήστη), το password, ένα email,  και την ημερομηνία εγγραφής 
-στο σύστημα.  
- Για τους διευθυντές διατηρείται στη βάση η εταιρεία στην οποία εργάζονται και τα 
-συνολικά έτη προϋπηρεσίας.  
- Για κάθε εργαζόμενο  το σύστημα αποθηκεύει τον ΑΜ στην εταιρεία, το ΑΦΜ της 
-εταιρείας που εργάζονται και τα χρόνια προϋπηρεσίας στην εταιρεία (δύο από τα 
-πεδία που πρέπει να προστεθούν στο ενδεικτικό σχήμα της βάσης),  το βιογραφικό 
-του, τις ξένες γλώσσες που γνωρίζει (μία ή και περισσότερες), ένα αρχείο όπου 
-περιέχονται τυχόν πιστοποιήσεις που έχει, και ένα αρχείο με αναφορές σε διακρίσεις 
-που έλαβε κατά τη διάρκεια της εργασίας του στην εταιρεία .  
- Κάθε εργαζόμενος μπορεί να διαθέτει ένα ή περισσότερα πτυχία και για καθένα από 
-αυτά καταγράφουμε τον τίτλο του και το ίδρυμα που το απονέμει (ο συνδυασμός 
-τίτλου και ιδρύματος θεωρείται μοναδικός), το έτος κτήσης και το βαθμό πτυχίου. 
-Τον ίδιο τίτλο πτυχίου μπορεί να το κατέχουν περισσότεροι από ένας εργαζόμενοι. 
-Όταν ένα πτυχίο έχει καταχωρηθεί, αυτό συνεπάγεται ότι το κατέχει οπωσδήποτε 
-κάποιος εργαζόμενος. Ένας εργαζόμενος μπορεί και να μην κατέχει κάποιο πτυχίο. 
- Επιπλέον οι εργαζόμενοι  μπορούν να καταγράψουν στο σύστημα τα projects που 
-έχουν υλοποιήσει, εντός ή εκτός εταιρείας. Για κάθε project αποθηκεύεται μια 
-περιγραφή της υλοποίησης, ένα url όπου είναι διαθέσιμα όλα τα στοιχεία του έργου. 
-Κάθε project έχει έναν αύξοντα αριθμό μοναδικό για τον εργαζόμενο που το έχει 
-υλοποιήσει (το πρώτο project που υποβάλει ο εργαζόμενος  στο σύστημα έχει τον 
-α/α 1, το δεύτερο το 2 κ.ο.κ. και αυτό ισχύει για κάθε εργαζόμενο). Ένας εργαζόμενος 
-μπορεί να μην έχει συμμετάσχει σε κάποιο project. 
- Κάθε αξιολογητής εργάζεται για μια εταιρεία και έχει έναν κωδικό αξιολογητή.  
- Μια εταιρεία μπορεί να απασχολεί πολλούς αξιολόγητές.  
- Ο αξιολογητής ανακοινώνει τις θέσεις εργασίας που είναι διαθέσιμες για την εξέλιξη 
-προσωπικού. Κάθε ανακοίνωση θέσης εργασίας συνοδεύεται από την ημερομηνία 
-ανακοίνωσης και την ημερομηνία λήξης υποβολών αιτήσεων αξιολόγησης.  
- Για κάθε θέση εργασίας που ανακοινώνεται ως θέση προαγωγής, διατηρούμε έναν 
-κωδικό (μοναδικό), τον τίτλο της, την έδρα όπου θα εργάζεται ο εργαζόμενος, και τον 
-μισθό της. Επιπλέον, κάθε θέση εργασίας απαιτεί γνώσεις από ένα (τουλάχιστον) ή 
-περισσότερα αντικείμενα για τα οποία αποθηκεύουμε τίτλο (μοναδικός) και 
-περιγραφή. Κάθε αντικείμενο μπορεί να ανήκει σε ένα γενικότερο αντικείμενο και 
-κάθε αντικείμενο μπορεί να περιέχει πολλά πιο ειδικά αντικείμενα. Περισσότερες 
-από μία θέσεις εργασίας μπορούν να αφορούν το ίδιο αντικείμενο.  
- Κανένας χρήστης δεν μπορεί να αλλάξει το username του. 
+## 👥 User Roles
+
+The system supports 4 main user roles:
+
+1. **Manager** – Manages company data, employee folders, and initiates promotions.
+2. **Evaluator** – Posts job openings and evaluates candidates across three phases.
+3. **Employee** – Applies for available promotion jobs and views their evaluation results.
+4. **Administrator** – Manages user accounts, companies, and system objects.
+
+---
+
+## 🗃️ Key Database Features
+
+- Supports multiple companies.
+- Stores user credentials, company info, and user profiles.
+- Tracks employee data, including CVs, degrees, certifications, projects, and awards.
+- Logs insert, update, and delete actions by users in a dedicated audit table.
+
+---
+
+## ⚙️ Functional Requirements
+
+- **Evaluation process** involves three phases:
+  1. Interview (0–4)
+  2. Manager report (0–4)
+  3. Academic/professional background (0–2)
+
+- Final evaluation results are automatically calculated and stored.
+- **Applications system** allows employees to apply for promotions.
+- **Logging system** records all data modifications.
+
+---
+
+## 🧮 SQL Requirements
+
+- Schema extension
+- `CREATE` and `INSERT` scripts for testing
+- Stored procedures for:
+  - Fetching evaluations for an employee
+  - Finalizing evaluation results
+  - Displaying ranked candidates
+- Triggers for:
+  - Logging changes
+  - Enforcing data integrity (e.g., preventing username changes)
+
+---
+
+## 🖥️ GUI Interfaces (Java with JDBC)
+
+Each user has a specific interface:
+
+- **Login screen** for all users
+- **Manager GUI**: Edit company data, view evaluations, manage employees
+- **Evaluator GUI**: Post jobs, enter evaluations, run stored procedures
+- **Employee GUI**: Submit applications, update profile, view status
+- **Admin GUI**: Manage users, companies, and objects
+
+GUIs use dropdowns and list-based inputs to minimize errors and improve usability.
+
+---
+
+## 📝 Notes
+
+- Final evaluation is locked once submitted.
+- Users cannot change their usernames.
+- GUI access and permissions are restricted based on user role.
