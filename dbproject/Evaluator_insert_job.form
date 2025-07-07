@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" attributes="0">
+              <EmptySpace min="-2" pref="256" max="-2" attributes="0"/>
+              <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="161" max="-2" attributes="0"/>
+          </Group>
+          <Group type="102" attributes="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="-2" pref="67" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="job_id" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="belongs_to" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="52" pref="52" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                  <Component id="Job_id" alignment="0" pref="167" max="32767" attributes="0"/>
+                                  <Component id="Salary" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="Position" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="Belongs_to" max="32767" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Component id="position" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="salary" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="antikeim_title" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="afm" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="job_title" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                  <Component id="AFM" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="Title" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="Antikeim_Title" pref="167" max="32767" attributes="0"/>
+                              </Group>
+                          </Group>
+                      </Group>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
+                      <Component id="back_button" min="-2" pref="73" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace pref="62" max="32767" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="edra" min="-2" pref="45" max="-2" attributes="0"/>
+                          <Component id="start_date" min="-2" pref="166" max="-2" attributes="0"/>
+                          <Component id="announce_date" alignment="0" min="-2" pref="133" max="-2" attributes="0"/>
+                          <Component id="submission_date" alignment="0" min="-2" pref="142" max="-2" attributes="0"/>
+                          <Component id="evaluator" alignment="0" min="-2" pref="87" max="-2" attributes="0"/>
+                          <Component id="antikeim_descr" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="Edra" alignment="1" max="32767" attributes="0"/>
+                          <Component id="Start_date" alignment="1" max="32767" attributes="0"/>
+                          <Component id="Submission_date" alignment="1" max="32767" attributes="0"/>
+                          <Component id="Antikeim_descr" max="32767" attributes="0"/>
+                          <Component id="Announce_date" pref="193" max="32767" attributes="0"/>
+                          <Component id="Evaluator" alignment="0" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <Component id="insert_job_button" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
+              <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="job_id" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="start_date" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="Job_id" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="Start_date" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="salary" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="Salary" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="Edra" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="edra" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="position" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="announce_date" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="Position" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="Announce_date" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="job_title" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="submission_date" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="Title" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="Submission_date" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="28" pref="28" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="afm" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="evaluator" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="AFM" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="antikeim_title" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="antikeim_descr" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="Antikeim_descr" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="Antikeim_Title" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="belongs_to" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="Belongs_to" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace pref="32" max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="insert_job_button" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="back_button" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="49" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" attributes="0">
+                      <Component id="Evaluator" min="-2" pref="28" max="-2" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JLabel" name="jLabel1">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="24" style="0"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="66" green="66" red="0" type="rgb"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Insert data for the new job"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="job_id">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="18" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Job Id"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="salary">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="18" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Salary"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="position">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="18" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Position"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="job_title">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="18" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Title"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="afm">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="18" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="AFM"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="antikeim_title">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="18" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Antikeim Title"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="belongs_to">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="18" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Belongs To"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="start_date">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="18" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Start Date"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="edra">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="18" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Edra"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="announce_date">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="18" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Announce Date"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="submission_date">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="18" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Submission Date"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="evaluator">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="18" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Evaluator"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="antikeim_descr">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="18" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Antikeim Description"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="Job_id">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="18" style="0"/>
+        </Property>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="Salary">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="18" style="0"/>
+        </Property>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="Position">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="18" style="0"/>
+        </Property>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="Title">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="18" style="0"/>
+        </Property>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="AFM">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="18" style="0"/>
+        </Property>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="Belongs_to">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="18" style="0"/>
+        </Property>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="Start_date">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="18" style="0"/>
+        </Property>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="Edra">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="18" style="0"/>
+        </Property>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="Submission_date">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="18" style="0"/>
+        </Property>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="Antikeim_descr">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="18" style="0"/>
+        </Property>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="insert_job_button">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="18" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Insert Job"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="insert_job_buttonActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="back_button">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="18" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Back"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="back_buttonActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JTextField" name="Announce_date">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="18" style="0"/>
+        </Property>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="Antikeim_Title">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="18" style="0"/>
+        </Property>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="Evaluator">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="18" style="0"/>
+        </Property>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
+      </AuxValues>
+    </Component>
+  </SubComponents>
+</Form>
